@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu Impresión 3D - Tienda de Impresión 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula tu Impresión 3D</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre Nosotros</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="cart.html">Carrito</a></li>
+                <li><a href="upload.html">Calcular Impresión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Sube tu Archivo STL</h2>
+            <form id="upload-form">
+                <label for="file-upload">Selecciona tu archivo STL:</label>
+                <input type="file" id="file-upload" accept=".stl" required>
+                <label for="material">Selecciona el material:</label>
+                <select id="material" required>
+                    <option value="PLA">PLA</option>
+                    <option value="ABS">ABS</option>
+                    <option value="PETG">PETG</option>
+                </select>
+                <label for="infill">Selecciona el porcentaje de relleno:</label>
+                <select id="infill" required>
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                    <option value="50">50%</option>
+                    <option value="100">100%</option>
+                </select>
+                <button type="submit">Calcular Coste</button>
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tienda de Impresión 3D. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
